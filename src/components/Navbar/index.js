@@ -6,7 +6,7 @@ export default function NavbarDark() {
     return (
         <Navbar class="inline" bg="dark" variant="light">
         <Container>
-            <img src={logo} />
+            <img alt='' src={logo} />
             <h3 className="text-center text-white mt-4 mb-4">Cadastre seu email e seja notificado da BLACK FRIDAY!</h3>
             <Form inline>
                 <InputGroup>

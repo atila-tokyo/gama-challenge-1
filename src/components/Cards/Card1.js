@@ -3,7 +3,6 @@ import { Card, CardGroup } from 'react-bootstrap';
 import gazelle from '../../assets/gazelle.jpeg';
 import samoa from '../../assets/samoa.jpeg'
 import stansmith from '../../assets/stansmith.jpeg'
-import BF from '../../assets/BF.jpeg'
 export default function Card1() {
     return (
         <CardGroup>
