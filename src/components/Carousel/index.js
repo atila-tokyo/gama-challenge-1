@@ -6,7 +6,7 @@ import { Carousel, Container } from 'react-bootstrap';
 
 export default function Slides() {
     return (
-        <Container fluid class="content">
+        <Container fluid className="content">
         <Carousel fade class="bg-dark p-0">
             <Carousel.Item>
                 <img

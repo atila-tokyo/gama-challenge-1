@@ -4,10 +4,10 @@ import { Navbar, Button, Form, InputGroup, FormControl, Container } from 'react-
 
 export default function NavbarDark() {
     return (
-        <Navbar class="inline" bg="dark" variant="light">
+        <Navbar bg="dark" variant="light">
         <Container>
             <img alt='' src={logo} />
-            <h3 className="text-center text-white mt-4 mb-4">Cadastre seu email e seja notificado da BLACK FRIDAY!</h3>
+            <h3 className="text-center text-white mt-4 mb-4">Cadastre seu email e seja notificado sobre a BLACKFRIDAY</h3>
             <Form inline>
                 <InputGroup>
                     <InputGroup.Prepend>
