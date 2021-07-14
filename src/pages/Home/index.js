@@ -9,8 +9,10 @@ function App(props) {
     return (
         <>
             <NavbarDark />
-            <Card1 />
+            <h3 class="text-center">Não passe vontade! Todos os modelos ORIGINALS para colecionadores em um lugar só</h3>
             <Slides />
+            <br></br>
+            <Card1 />
         </>
     );
 }

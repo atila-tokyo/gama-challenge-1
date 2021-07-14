@@ -6,8 +6,8 @@ import { Carousel, Container } from 'react-bootstrap';
 
 export default function Slides() {
     return (
-        <Container fluid>
-        <Carousel fade class="bg-dark">
+        <Container fluid class="content">
+        <Carousel fade class="bg-dark p-0">
             <Carousel.Item>
                 <img
                 className="d-inline w-100"
@@ -15,8 +15,8 @@ export default function Slides() {
                 alt="First slide"
             />
             <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <h1>Boston Super</h1>
+                <h3>Modelo super raro em cores únicas</h3>
             </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -27,8 +27,8 @@ export default function Slides() {
                 />
 
                 <Carousel.Caption>
-                    <h3>Second slide label</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <h1>ZX 750</h1>
+                    <h3>Um toque retrô na sua coleção</h3>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -39,8 +39,8 @@ export default function Slides() {
                 />
 
                 <Carousel.Caption>
-                    <h3>Third slide label</h3>
-                    <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                    <h1>ZX 750</h1>
+                    <h3>Disponibilidade limitada</h3>
                 </Carousel.Caption>
             </Carousel.Item>
         </Carousel>
