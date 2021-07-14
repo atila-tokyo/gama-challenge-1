@@ -1,7 +1,8 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar, Button, Form, InputGroup, FormControl, Container } from 'react-bootstrap';
-import { Card1 } from '../../Cards';
+import Card1 from '../../components/Cards/Card1';
+import Slides from '../../components/Carousel';
 function App(props) {
 
     return (
@@ -27,6 +28,7 @@ function App(props) {
             </Container>
             </Navbar>
             <Card1 />
+            <Slides />
         </>
     );
 }
