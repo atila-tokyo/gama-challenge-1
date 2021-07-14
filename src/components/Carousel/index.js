@@ -1,16 +1,16 @@
 import React from 'react';
-import pairshoes from "../assets/pairshoes.jpeg";
-import zx750 from "../assets/zx750.jpeg";
-import zx750g from "../assets/zx750g.jpeg";
+import pairshoes from "../../assets/pairshoes.jpeg";
+import zx750 from "../../assets/zx750.jpeg";
+import zx750g from "../../assets/zx750g.jpeg";
 import { Carousel, Container } from 'react-bootstrap';
 
 export default function Slides() {
     return (
-        <Container>
-        <Carousel fade>
+        <Container fluid>
+        <Carousel fade class="bg-dark">
             <Carousel.Item>
                 <img
-                className="d-block w-100"
+                className="d-inline w-100"
                 src={pairshoes}
                 alt="First slide"
             />
