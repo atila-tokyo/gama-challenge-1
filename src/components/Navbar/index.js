@@ -6,7 +6,7 @@ import { useHistory } from 'react-router';
 export default function NavbarDark() {
     const history = useHistory();
     const [ email, setEmail ] = useState('');
-    const listEmails = useState([]);
+    const [listEmails, setListEmails] = useState([]);
 
     const handleEmail = () => {
         if (email) {
