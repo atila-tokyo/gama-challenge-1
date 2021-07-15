@@ -1,13 +1,14 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Navbar, Button, Form, InputGroup, FormControl, Container } from 'react-bootstrap';
 import NavbarDark from '../../components/Navbar';
 import CardBanner from '../../components/Cards/Card-banner';
 import Card1 from '../../components/Cards/Card1';
 import Slides from '../../components/Carousel';
 import Footer from '../../components/Footer';
+import { useHistory } from 'react-router-dom';
 
-function App(props) {
+function Home(props) {
+    const history = useHistory()
 
     return (
         <>
@@ -22,4 +23,4 @@ function App(props) {
     );
 }
 
-export default App;
+export default Home;

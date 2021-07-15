@@ -1,8 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import logo from "../../assets/logo-originals.png";
 import { Navbar, Button, Form, InputGroup, FormControl, Container } from 'react-bootstrap';
+import { useHistory } from 'react-router';
 
 export default function NavbarDark() {
+    const history = useHistory();
+    const [ email, setEmail ] = useState('');
+    const listEmails = useState([]);
+
+    const handleEmail = () => {
+        if (email) {
+        listEmails.push(email);
+        localStorage.setItem('listEmails', JSON.stringify(listEmails));
+        history.push('/subscribed');
+        }
+    }
+
     return (
         <Navbar bg="dark" variant="light">
            
@@ -17,12 +30,13 @@ export default function NavbarDark() {
                         <FormControl
                         placeholder="E-mail"
                         aria-label="Username"
-                        aria-describedby="basic-addon1"
+                        value={email}
+                        onChange={e => setEmail(e.target.value)}
                         />
                     </InputGroup>
                 </Form>
                 <Form inline className="ms-0 me-0">
-                    <Button>Se inscreva!</Button>
+                    <Button type="button" onClick={handleEmail}>Se inscreva!</Button>
                 </Form>
                 </Container>
             
