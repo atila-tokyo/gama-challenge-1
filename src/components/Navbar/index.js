@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import logo from "../../assets/logo-originals.png";
 import { Navbar, Button, Form, InputGroup, FormControl, Container } from 'react-bootstrap';
 import { useHistory } from 'react-router';
@@ -10,11 +10,27 @@ export default function NavbarDark() {
 
     const handleEmail = () => {
         if (email) {
-        listEmails.push(email);
-        localStorage.setItem('listEmails', JSON.stringify(listEmails));
-        history.push('/subscribed');
+            console.log("list", [...listEmails, email])
+            setListEmails([...listEmails, email]);
+            localStorage.setItem('listEmails', JSON.stringify([...listEmails, email]));
+            // listEmails.push(email);
+            // localStorage.setItem('listEmails', JSON.stringify(listEmails));
+
+            // Espera 1s pra redirecionar            
+            setTimeout(()=>{
+                history.push('/subscribed');
+            },1000)
         }
     }
+    
+    useEffect(() => {
+        // primeiro ve se tem algo no localStorage
+        const data = localStorage.getItem('listEmails');
+        console.log("data",data)
+        if (data) {
+            setListEmails(JSON.parse(data))
+        }
+    }, []);
 
     return (
         <Navbar bg="dark" variant="light">

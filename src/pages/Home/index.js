@@ -5,10 +5,8 @@ import CardBanner from '../../components/Cards/Card-banner';
 import Card1 from '../../components/Cards/Card1';
 import Slides from '../../components/Carousel';
 import Footer from '../../components/Footer';
-import { useHistory } from 'react-router-dom';
 
 function Home(props) {
-    const history = useHistory()
 
     return (
         <>
