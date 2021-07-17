@@ -13,10 +13,8 @@ export default function NavbarDark() {
             console.log("list", [...listEmails, email])
             setListEmails([...listEmails, email]);
             localStorage.setItem('listEmails', JSON.stringify([...listEmails, email]));
-            // listEmails.push(email);
-            // localStorage.setItem('listEmails', JSON.stringify(listEmails));
 
-            // Espera 1s pra redirecionar            
+            // waits for 1 second before redirecting            
             setTimeout(()=>{
                 history.push('/subscribed');
             },1000)
@@ -24,7 +22,7 @@ export default function NavbarDark() {
     }
     
     useEffect(() => {
-        // primeiro ve se tem algo no localStorage
+        // checks if is there anything at the localStorage
         const data = localStorage.getItem('listEmails');
         console.log("data",data)
         if (data) {
