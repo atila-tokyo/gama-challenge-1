@@ -3,7 +3,7 @@
    <strong>adidas collect mock website</strong>
 </h1>
 
-![](adidas-blackfriday(1).gif)
+![](adidas-blackfriday (1).gif)
 
 ## About this project
 
