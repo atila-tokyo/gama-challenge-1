@@ -1,9 +1,9 @@
+![](adidas-blackfriday.gif)
 
 <h1 align="center">
    <strong>adidas collect mock website</strong>
 </h1>
 
-![](adidas-blackfriday.gif)
 
 ## About this project
 
